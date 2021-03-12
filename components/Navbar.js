@@ -40,10 +40,10 @@ const Navbar = () => {
                     </button>
                     :
                 <div className="ml-3 relative">
+                <span className="text-white h-8 w-8 rounded-full">{session.user.email}</span>
                 <div>
                     <button onClick={signOut} type="button" className=" flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu" aria-expanded="false" aria-haspopup="true">
                     <span className="sr-only">Open user menu</span>
-                    <span className="h-8 w-8 rounded-full">{session.user.email}</span>
                     <span className="text-white">signOut</span>
                     </button>
                 </div>
