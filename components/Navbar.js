@@ -40,7 +40,7 @@ const Navbar = () => {
                     </button>
                     :
                 <div className="ml-3 relative">
-                <div className="flex space-x-4">                
+                <div>                
                     <span className="text-white h-8 w-8 rounded-full">{session.user.email}</span>
                 </div>
                 <div>
