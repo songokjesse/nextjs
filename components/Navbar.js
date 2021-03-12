@@ -34,17 +34,17 @@ const Navbar = () => {
             </div>
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {!session ?
-                    <button onClick={signIn} className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                    <button onClick={signIn} className=" p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                     <span className="sr-only">View notifications</span>
-                    signIn
+                     <span className="text-white">signIn</span>
                     </button>
                     :
                 <div className="ml-3 relative">
                 <div>
-                    <button onClick={signOut} type="button" className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu" aria-expanded="false" aria-haspopup="true">
+                    <button onClick={signOut} type="button" className=" flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu" aria-expanded="false" aria-haspopup="true">
                     <span className="sr-only">Open user menu</span>
                     <span className="h-8 w-8 rounded-full">{session.user.email}</span>
-                    signOut
+                    <span className="text-white">signOut</span>
                     </button>
                 </div>
                 </div>
