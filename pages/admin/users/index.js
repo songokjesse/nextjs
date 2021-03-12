@@ -3,8 +3,8 @@ import UserList from "../../../components/users/UserList"
 
 const UserHome = () => {
     const [ session, loading ] = useSession()
-    // if (loading) return null
-    // if (!loading && !session) return <p>Access Denied</p>
+    if (loading) return null
+    if (!loading && !session) return <p>Access Denied</p>
     return (<div>
         UserHome
         <hr/>
