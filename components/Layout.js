@@ -1,10 +1,17 @@
+import Head from 'next/head'
 import Navbar from "./Navbar";
 const Layout = ({ children }) => {
     return (
-        <div>
+        <>
+            <Head>
+              <title>My Chama</title>
+              <link rel="icon" href="/favicon.ico" />
+             </Head>
             <Navbar />
-            {children}
-        </div>
+            <div className="container md:mx-auto">
+                {children}
+            </div>
+        </>
        )
 }
 
