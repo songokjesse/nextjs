@@ -1,14 +1,17 @@
 import styles from '../styles/Home.module.css'
+import { useSession } from 'next-auth/client'
 
 export default function Home() {
+  const [session] = useSession();
   return (
     <div className={styles.container}>
-     
+
       <main className={styles.main}>
+        {! session ?
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">MyChama Manager</a>
         </h1>
-
+        :
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Chama List&rarr;</h3>
@@ -32,6 +35,7 @@ export default function Home() {
             <h3>Reports &rarr;</h3>
           </a>
         </div>
+          }
       </main>
 
       <footer className={styles.footer}>

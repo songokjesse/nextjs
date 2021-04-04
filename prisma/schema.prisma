@@ -17,8 +17,7 @@ model User {
   emailVerified DateTime? @map(name: "email_verified")
   image         String?
   createdAt     DateTime  @default(now()) @map(name: "created_at")
-  updatedAt     DateTime  @updatedAt @map(name: "updated_at")
-
+  updatedAt     DateTime  @default(now()) @map(name: "updated_at")
   @@map(name: "users")
 }
 
@@ -52,4 +51,13 @@ model Session {
   updatedAt    DateTime @default(now()) @map(name: "updated_at")
 
   @@map(name: "sessions")
+}
+
+model Chama {
+  id           Int      @id @default(autoincrement())
+  name         String?
+  description  String?
+  createdAt    DateTime @default(now()) @map(name: "created_at")
+  updatedAt    DateTime @default(now()) @map(name: "updated_at")
+
 }

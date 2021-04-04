@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@prisma/client": "^2.18.0",
+    "@prisma/client": "^2.20.1",
     "next": "10.0.5",
     "next-auth": "^3.11.2",
     "react": "17.0.1",
@@ -18,7 +18,7 @@
     "@tailwindcss/postcss7-compat": "^2.0.3",
     "autoprefixer": "^9.8.6",
     "postcss": "^7.0.35",
-    "prisma": "^2.18.0",
+    "prisma": "^2.20.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3"
   }
 }

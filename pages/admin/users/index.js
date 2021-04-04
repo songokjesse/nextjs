@@ -6,7 +6,7 @@ const UserHome = () => {
     if (loading) return null
     if (!loading && !session) return <p>Access Denied</p>
     return (<div>
-        UserHome
+        <h1>UserHome</h1>
         <hr/>
         <UserList />
 
