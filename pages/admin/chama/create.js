@@ -9,7 +9,7 @@ const Create_Chama = () => {
             <h2>Create New Chama</h2>
             <hr />
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input name="name" ref={...register({ required: true})}/>
+                {/*<input name="name" ref={...register({ required: true})}/>*/}
                 {errors.name && <span>This email is required</span>}
 
                 <textarea name="description"></textarea>
