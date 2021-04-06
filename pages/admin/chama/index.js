@@ -1,18 +1,18 @@
-// import prisma from '../../../lib/dbConnection'
-// export const getStaticProps = async () => {
-//     const chamas  = await prisma.chamas.findMany()
-//     return { props: chamas}
-// }
+import prisma from '../../../lib/dbConnection'
+export const getStaticProps = async () => {
+    const chamas  = await prisma.chamas.findMany()
+    return { props: chamas}
+}
 
-const Chama = () => {
+const Chama = (chamas) => {
     return (
     <div>
         <h1>Chama List </h1>
-        {/*{chamas.map((chama) => {*/}
-        {/*    <div >*/}
-
-        {/*    </div>*/}
-        {/*})}*/}
+        {chamas.map((chama) => {
+            <div key={chama.id}>
+                {chama.name}
+            </div>
+        })}
     </div>
     )
 }
