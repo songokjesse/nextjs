@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
 
 export const getStaticProps = async () => {
-    const chamas  = await prisma.chamas.findMany()
+    const chamas  = await prisma.chama.findMany()
     return { props: chamas}
 }
 
