@@ -12,7 +12,8 @@
     "next": "10.0.5",
     "next-auth": "^3.11.2",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-hook-form": "^7.0.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.3",
