@@ -1,4 +1,7 @@
-import prisma from '../../../lib/dbConnection'
+import { PrismaClient } from '@prisma/client'
+
+const prisma = new PrismaClient()
+
 export const getStaticProps = async () => {
     const chamas  = await prisma.chamas.findMany()
     return { props: chamas}
